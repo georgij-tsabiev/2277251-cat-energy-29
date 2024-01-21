@@ -1,0 +1,58 @@
+@import "common/variables.scss";
+
+.main-header {
+  padding: 13px 0 10px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 0 0;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 94px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+
+  &--extended {
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+    }
+  }
+}
+
+.main-header__logo-link {
+  align-self: self-start;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

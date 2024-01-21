@@ -1,0 +1,30 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+}
+
+.social__link-vkontakte-icon,
+.social__link-youtube-icon,
+.social__link-telegram-icon {
+  fill: #666666;
+}
+
+.social__link-vkontakte-icon:hover,
+.social__link-youtube-icon:hover,
+.social__link-telegram-icon:hover {
+  fill: #68b738;
+}
+
+.social__link-vkontakte-icon:active,
+.social__link-youtube-icon:active,
+.social__link-telegram-icon:active {
+  opacity: 0.3;
+}
