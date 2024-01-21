@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кэт энерджи: Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2277251-cat-energy-29/12/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper container">
+      <a class="main-header__logo-link logo-main" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="50">
+          <img src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип рыжего кота.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-cat-energy-tablet.svg" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="img/logo-cat-energy-tablet.svg">
+          <img class="logo-main__text" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+        </picture>
+      </a>
+      <!-- Для показа открытого меню без JS - добавить для <nav> ниже класс main-nav--nojs -->
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню навигации</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list reset-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--extended" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--extended" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link site-list__link--extended" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page__main-container main-container">
+    <h1 class="visually-hidden">Интернет-магазин фитнес еды для котиков</h1>
+    <section class="page__nutrition-program nutrition-program">
+      <div class="nutrition-program__description-wrapper container">
+        <h2 class="nutrition-program__title">Подбор программы</h2>
+        <p class="nutrition-program__text">
+          Заполните анкету, и мы подберем
+          программу&nbsp;питания для вашего кота
+        </p>
+      </div>
+      <form class="nutrition-program-form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="nutrition-program-form__container container">
+          <div class="nutrition-program-form__labels-wrapper">
+            <label class="nutrition-program-form__label">
+              Имя:*
+              <input class="nutrition-program-form__field field" type="text" name="cat-name" value="Барсик" required>
+            </label>
+            <label class="nutrition-program-form__label">
+              Вес (кг):*
+              <input class="nutrition-program-form__field field" type="text" name="cat-weight" value="7" required>
+            </label>
+            <label class="nutrition-program-form__label">
+              Возраст (лет):
+              <input class="nutrition-program-form__field field" type="text" name="cat-age" value="7">
+            </label>
+          </div>
+
+          <div class="nutrition-program-form__list-wrapper">
+            <ul class="nutrition-program-form__list radio-list reset-list">
+              <li class="radio-list__item">
+                <label class="radio-list__control control">
+                  Похудение
+                  <input class="radio-list__field field visually-hidden" type="radio" name="target" value="weight-loss" required checked>
+                  <span class="control__oultine"></span>
+                </label>
+              </li>
+              <li class="radio-list__item">
+                <label class="radio-list__control control">
+                  Набор массы
+                  <input class="radio-list__field field visually-hidden" type="radio" name="target" value="mass-gain">
+                  <span class="control__oultine"></span>
+                </label>
+              </li>
+              <li class="radio-list__item">
+                <label class="radio-list__control control">
+                  Не знаю (Нужен ваш совет)
+                  <input class="radio-list__field field visually-hidden" type="radio" name="target" value="needs-advice">
+                  <span class="control__oultine"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nutrition-program-form__group">
+          <div class="nutrition-program-form__group-title-wrapper">
+            <h2 class="nutrition-program-form__group-title">Контактные данные (владельца кота)</h2>
+          </div>
+          <div class="nutrition-program-form__contacts-wrapper container">
+            <label class="nutrition-program-form__label">
+              E-mail:*
+              <input class="nutrition-program-form__field-email field" type="email" name="cat-owner-email" value="kuklachev@gmail.com" required>
+            </label>
+            <label class="nutrition-program-form__label">
+              Телефон:*
+              <input class="nutrition-program-form__field-phone field" type="tel" name="cat-owner-number" value="8 (960) 900-60-90" required>
+            </label>
+          </div>
+        </div>
+
+        <div class="nutrition-program-form__group">
+          <div class="nutrition-program-form__group-title-wrapper">
+            <h2 class="nutrition-program-form__group-title">Комментарий</h2>
+          </div>
+          <div class="nutrition-program-form__comment-field-container container">
+            <textarea class="field comment-field" name="cat-habits" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </div>
+
+        <div class="nutrition-program-form__group">
+          <div class="nutrition-program-form__group-title-wrapper">
+            <h2 class="nutrition-program-form__group-title">Дополнительно</h2>
+          </div>
+
+          <div class="nutrition-program-form__list-container container">
+            <ul class="nutrition-program-form__list checkbox-list reset-list">
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-sweetener" value="add" checked>
+                  Сахарозаменитель
+                  <span class="control__oultine"></span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-drinking-water" value="add">
+                  Питьевая вода
+                  <span class="control__oultine"></span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-milk" value="add">
+                  Молоко
+                  <span class="control__oultine"></span>
+                </label>
+              </li>
+              <li class="checkbox-list__item">
+                <label class="checkbox-list__control control">
+                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="product-vitamins" value="add">
+                  Витамины
+                  <span class="control__oultine"></span>
+                </label>
+              </li>
+            </ul>
+            <button class="button nutrition-program-form__button button--primary" type="submit">
+              Отправить заявку
+            </button>
+            <span class="nutrition-program-form__text-required-fields">* — Обязательные поля</span>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="page__map map">
+      <h2 class="visually-hidden">Мы на карте.</h2>
+      <div class="event-invitation event-invitation--extended">
+        <p class="event-invitation__description">
+          Приглашаем к сотрудничеству дилеров!
+        </p>
+        <address class="event-invitation__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+      </div>
+      <div class="map__wrapper">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/map-location-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/map-location-tablet.png">
+          <img class="map__image" src="img/map-location.png" width="320" height="362" alt="Мы на карте.">
+        </picture>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper container">
+      <div class="main-footer__logo logo">
+        <a class="logo-main" href="index.html">
+          <img src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Cat Energy.">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list reset-list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <p class="copyright__text">
+            HTML Academy
+          </p>
+          <img class="copyright__logo" src="img/logo-html-academy.svg" width="27" height="34" alt="Логотип HTML Академии.">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
