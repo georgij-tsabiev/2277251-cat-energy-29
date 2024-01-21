@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import ghpages from 'gh-pages';
 
 // Styles
 
@@ -165,3 +166,5 @@ gulp.series(
 server,
 watcher
 ));
+
+ghpages.publish('build', function(err) {});
